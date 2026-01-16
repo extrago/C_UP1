@@ -8,10 +8,8 @@ export class HomePage {
 
     constructor(page: Page) {
         this.page = page;
-        // تحديث هذا السطر بناءً على ما وجدناه في Codegen
-        this.searchInput = page.getByRole('combobox', { name: 'بحث' }); 
-        
-        // زر البحث غالباً سيعمل، لكن تأكد من اسمه أيضاً إذا لزم الأمر
+
+        this.searchInput = page.getByRole('combobox', { name: 'Search' });     
         this.searchButton = page.getByRole('button', { name: 'بحث Google' }).first();
     }
 
